@@ -1,0 +1,20 @@
+# Test your FastAPI endpoints
+###
+# Create new empty box
+GET 127.0.0.1:8000/box/6693dc2ce3b7f100081984f8
+Accept: application/json
+
+###
+# Loads data from API/cache
+GET 127.0.0.1:8000/6693dc2ce3b7f100081984f8/read_api
+Accept: application/json
+
+###
+# Prints data
+GET 127.0.0.1:8000/6693dc2ce3b7f100081984f8/print_data
+Accept: application/json
+
+###
+# Unknown box
+GET 127.0.0.1:8000/6693dc2ce3b7f100081984f7/print_data
+Accept: application/json
